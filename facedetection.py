@@ -32,15 +32,15 @@ def detectfacelive():
     video_capture = cv2.VideoCapture(0)
     bhagvat_img = face_recognition.load_image_file("face_data/bhagvat.jpg")
     BM_face_encoding = face_recognition.face_encodings(bhagvat_img)[0]
-    sid_image = face_recognition.load_image_file("face_data/sid.jpg")
-    sid_face_encoding = face_recognition.face_encodings(sid_image)[0]
+    amisha_image = face_recognition.load_image_file("face_data/amisha.jpg")
+   amisha_face_encoding = face_recognition.face_encodings(amisha_image)[0]
     known_face_encodings = [
         BM_face_encoding,
-        sid_face_encoding
+        amisha_face_encoding
     ]
     known_face_names = [
         "Bhagvat",
-        "Sid"
+        "amisha"
     ]
     face_locations = []
     face_encodings = []
